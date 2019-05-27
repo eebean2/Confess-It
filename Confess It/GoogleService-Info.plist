@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>743878640424-6dk3slvhc2egijg6l6t1ebf4nr1ke1o2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.743878640424-6dk3slvhc2egijg6l6t1ebf4nr1ke1o2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAEkY_Z1shewG4Y589z1vJXVZW9TKwBogo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>743878640424</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bws.Confess-It</string>
+	<key>PROJECT_ID</key>
+	<string>confess-d2645</string>
+	<key>STORAGE_BUCKET</key>
+	<string>confess-d2645.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:743878640424:ios:fbc102990bcdda05</string>
+	<key>DATABASE_URL</key>
+	<string>https://confess-d2645.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7379E761229AF7F600063CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379E760229AF7F600063CBC /* AppDelegate.swift */; };
+		7379E766229AF7F600063CBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7379E764229AF7F600063CBC /* Main.storyboard */; };
+		7379E768229AF7F800063CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7379E767229AF7F800063CBC /* Assets.xcassets */; };
+		7379E76B229AF7F800063CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7379E769229AF7F800063CBC /* LaunchScreen.storyboard */; };
+		7379E773229AF9C700063CBC /* ConfessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7379E772229AF9C700063CBC /* ConfessCell.xib */; };
+		7379E775229AFC7A00063CBC /* ConfessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379E774229AFC7A00063CBC /* ConfessCell.swift */; };
+		7379E777229AFD2F00063CBC /* ConfessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379E776229AFD2F00063CBC /* ConfessController.swift */; };
+		7379E779229AFE8200063CBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7379E778229AFE8200063CBC /* GoogleService-Info.plist */; };
+		73A42847229C5E760017768C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A42846229C5E760017768C /* UIColor+Extension.swift */; };
+		73A42849229C6D590017768C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A42848229C6D590017768C /* UIView+Extension.swift */; };
+		73FBA787229B25ED00B89B64 /* NewConfession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBA785229B25ED00B89B64 /* NewConfession.swift */; };
+		73FBA78A229B481F00B89B64 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBA789229B481F00B89B64 /* Share.swift */; };
+		73FBA78C229B48B800B89B64 /* Confession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBA78B229B48B800B89B64 /* Confession.swift */; };
+		8C029A5A27B4A80AA471716A /* Pods_Confess_It.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2EEB5213E758BADC0FC1B6 /* Pods_Confess_It.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		599F9A8A69D520459C8C5440 /* Pods-Confess It.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confess It.debug.xcconfig"; path = "Target Support Files/Pods-Confess It/Pods-Confess It.debug.xcconfig"; sourceTree = "<group>"; };
+		7379E75D229AF7F600063CBC /* Confess It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Confess It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7379E760229AF7F600063CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7379E765229AF7F600063CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7379E767229AF7F800063CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7379E76A229AF7F800063CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7379E76C229AF7F800063CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7379E772229AF9C700063CBC /* ConfessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfessCell.xib; sourceTree = "<group>"; };
+		7379E774229AFC7A00063CBC /* ConfessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfessCell.swift; sourceTree = "<group>"; };
+		7379E776229AFD2F00063CBC /* ConfessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfessController.swift; sourceTree = "<group>"; };
+		7379E778229AFE8200063CBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		73A42846229C5E760017768C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		73A42848229C6D590017768C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		73FBA785229B25ED00B89B64 /* NewConfession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConfession.swift; sourceTree = "<group>"; };
+		73FBA789229B481F00B89B64 /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
+		73FBA78B229B48B800B89B64 /* Confession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confession.swift; sourceTree = "<group>"; };
+		9B2EEB5213E758BADC0FC1B6 /* Pods_Confess_It.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confess_It.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9B8DF3CAA7448738771B43 /* Pods-Confess It.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confess It.release.xcconfig"; path = "Target Support Files/Pods-Confess It/Pods-Confess It.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7379E75A229AF7F600063CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C029A5A27B4A80AA471716A /* Pods_Confess_It.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D8BF9E085700F2912526A28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				599F9A8A69D520459C8C5440 /* Pods-Confess It.debug.xcconfig */,
+				DB9B8DF3CAA7448738771B43 /* Pods-Confess It.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7379E754229AF7F600063CBC = {
+			isa = PBXGroup;
+			children = (
+				7379E75F229AF7F600063CBC /* Confess It */,
+				7379E75E229AF7F600063CBC /* Products */,
+				1D8BF9E085700F2912526A28 /* Pods */,
+				F569FE3C29AB90D18403989A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7379E75E229AF7F600063CBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7379E75D229AF7F600063CBC /* Confess It.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7379E75F229AF7F600063CBC /* Confess It */ = {
+			isa = PBXGroup;
+			children = (
+				7379E760229AF7F600063CBC /* AppDelegate.swift */,
+				73FBA78B229B48B800B89B64 /* Confession.swift */,
+				7379E776229AFD2F00063CBC /* ConfessController.swift */,
+				73FBA785229B25ED00B89B64 /* NewConfession.swift */,
+				73FBA789229B481F00B89B64 /* Share.swift */,
+				73A42846229C5E760017768C /* UIColor+Extension.swift */,
+				73A42848229C6D590017768C /* UIView+Extension.swift */,
+				7379E764229AF7F600063CBC /* Main.storyboard */,
+				7379E774229AFC7A00063CBC /* ConfessCell.swift */,
+				7379E772229AF9C700063CBC /* ConfessCell.xib */,
+				7379E767229AF7F800063CBC /* Assets.xcassets */,
+				7379E769229AF7F800063CBC /* LaunchScreen.storyboard */,
+				7379E76C229AF7F800063CBC /* Info.plist */,
+				7379E778229AFE8200063CBC /* GoogleService-Info.plist */,
+			);
+			path = "Confess It";
+			sourceTree = "<group>";
+		};
+		F569FE3C29AB90D18403989A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B2EEB5213E758BADC0FC1B6 /* Pods_Confess_It.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7379E75C229AF7F600063CBC /* Confess It */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7379E76F229AF7F800063CBC /* Build configuration list for PBXNativeTarget "Confess It" */;
+			buildPhases = (
+				1A4795CD79308CDE3CB2E754 /* [CP] Check Pods Manifest.lock */,
+				7379E759229AF7F600063CBC /* Sources */,
+				7379E75A229AF7F600063CBC /* Frameworks */,
+				7379E75B229AF7F600063CBC /* Resources */,
+				8021FC0FFAF6AB4CC8E0D297 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Confess It";
+			productName = "Confess It";
+			productReference = 7379E75D229AF7F600063CBC /* Confess It.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7379E755229AF7F600063CBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Brick Water Studios";
+				TargetAttributes = {
+					7379E75C229AF7F600063CBC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7379E758229AF7F600063CBC /* Build configuration list for PBXProject "Confess It" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7379E754229AF7F600063CBC;
+			productRefGroup = 7379E75E229AF7F600063CBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7379E75C229AF7F600063CBC /* Confess It */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7379E75B229AF7F600063CBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7379E773229AF9C700063CBC /* ConfessCell.xib in Resources */,
+				7379E76B229AF7F800063CBC /* LaunchScreen.storyboard in Resources */,
+				7379E779229AFE8200063CBC /* GoogleService-Info.plist in Resources */,
+				7379E768229AF7F800063CBC /* Assets.xcassets in Resources */,
+				7379E766229AF7F600063CBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A4795CD79308CDE3CB2E754 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Confess It-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8021FC0FFAF6AB4CC8E0D297 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Confess It/Pods-Confess It-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Confess It/Pods-Confess It-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7379E759229AF7F600063CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FBA78C229B48B800B89B64 /* Confession.swift in Sources */,
+				73FBA78A229B481F00B89B64 /* Share.swift in Sources */,
+				73A42849229C6D590017768C /* UIView+Extension.swift in Sources */,
+				73FBA787229B25ED00B89B64 /* NewConfession.swift in Sources */,
+				73A42847229C5E760017768C /* UIColor+Extension.swift in Sources */,
+				7379E761229AF7F600063CBC /* AppDelegate.swift in Sources */,
+				7379E775229AFC7A00063CBC /* ConfessCell.swift in Sources */,
+				7379E777229AFD2F00063CBC /* ConfessController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7379E764229AF7F600063CBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7379E765229AF7F600063CBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7379E769229AF7F800063CBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7379E76A229AF7F800063CBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7379E76D229AF7F800063CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7379E76E229AF7F800063CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7379E770229AF7F800063CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 599F9A8A69D520459C8C5440 /* Pods-Confess It.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LBL5W959W4;
+				INFOPLIST_FILE = "Confess It/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bws.Confess-It";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7379E771229AF7F800063CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB9B8DF3CAA7448738771B43 /* Pods-Confess It.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LBL5W959W4;
+				INFOPLIST_FILE = "Confess It/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bws.Confess-It";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7379E758229AF7F600063CBC /* Build configuration list for PBXProject "Confess It" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7379E76D229AF7F800063CBC /* Debug */,
+				7379E76E229AF7F800063CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7379E76F229AF7F800063CBC /* Build configuration list for PBXNativeTarget "Confess It" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7379E770229AF7F800063CBC /* Debug */,
+				7379E771229AF7F800063CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7379E755229AF7F600063CBC /* Project object */;
+}
