@@ -28,7 +28,7 @@ public struct Confession {
     
     init(story: String) {
         self.referance = nil
-        self.author = nil
+        self.author = "Confess It"
         self.story = story
         self.published = Date()
         self.background = .darkText
