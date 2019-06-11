@@ -1,10 +1,13 @@
-//
-//  NewConfessionController.swift
-//  Confess It
-//
-//  Created by Erik Bean on 5/26/19.
-//  Copyright © 2019 Brick Water Studios. All rights reserved.
-//
+/*
+ * Confess It
+ *
+ * This app is provided as-is with no warranty or guarantee
+ * See the license file under "Confess It" -> "License" ->
+ * "License.txt"
+ *
+ * Copyright © 2019 Brick Water Studios
+ *
+ */
 
 import UIKit
 
@@ -18,9 +21,11 @@ class NewConfession: UIViewController {
     
     @IBOutlet var colors: [UIButton]!
     var selectedColor: UIColor = UIColor(red: 33/255, green: 33/255, blue: 33/255, alpha: 1)
+    let server = CIServer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        server.postDelegate = self
         colors[2].layer.borderColor = UIColor.lightGray.cgColor
         story.layer.borderColor = UIColor.black.cgColor
         story.layer.borderWidth = 2
@@ -47,17 +52,7 @@ class NewConfession: UIViewController {
         if a == nil || a == "" {
             a = "Anonymous"
         }
-        post(author: a!, story: story.text, color: selectedColor) { error in
-            if let error = error {
-                print(error.localizedDescription)
-                let alert = UIAlertController(title: "Oh No!", message: "You confession was so juicy, it broke our server!!! Please try again in a min!", preferredStyle: .alert)
-                let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                alert.addAction(ok)
-                self.present(alert, animated: true, completion: nil)
-            } else {
-                self.dismiss(animated: true, completion: nil)
-            }
-        }
+        server.post(author: a!, story: story.text, color: selectedColor)
     }
 
     @objc
@@ -88,5 +83,18 @@ class NewConfession: UIViewController {
         for color in colors { color.layer.borderColor = UIColor.clear.cgColor }
         sender.layer.borderColor = UIColor.lightGray.cgColor
         selectedColor = sender.backgroundColor!
+    }
+}
+
+extension NewConfession: CIPostDelegate {
+    func postDidSucceed() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func postDidFail(error: Error) {
+        let alert = UIAlertController(title: "Oh No!", message: "You confession was so juicy, it broke our server!!! Please try again in a min!", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
     }
 }

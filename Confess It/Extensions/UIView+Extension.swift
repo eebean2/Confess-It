@@ -1,10 +1,13 @@
-//
-//  UIView+Extension.swift
-//  Confess It
-//
-//  Created by Erik Bean on 5/27/19.
-//  Copyright © 2019 Brick Water Studios. All rights reserved.
-//
+/*
+ * Confess It
+ *
+ * This app is provided as-is with no warranty or guarantee
+ * See the license file under "Confess It" -> "License" ->
+ * "License.txt"
+ *
+ * Copyright © 2019 Brick Water Studios
+ *
+ */
 
 import UIKit
 

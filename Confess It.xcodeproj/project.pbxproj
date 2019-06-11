@@ -14,9 +14,12 @@
 		7379E773229AF9C700063CBC /* ConfessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7379E772229AF9C700063CBC /* ConfessCell.xib */; };
 		7379E775229AFC7A00063CBC /* ConfessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379E774229AFC7A00063CBC /* ConfessCell.swift */; };
 		7379E777229AFD2F00063CBC /* ConfessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379E776229AFD2F00063CBC /* ConfessController.swift */; };
-		7379E779229AFE8200063CBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7379E778229AFE8200063CBC /* GoogleService-Info.plist */; };
+		73914847229F0CB80015C545 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73914846229F0CB80015C545 /* GoogleService-Info.plist */; };
 		73A42847229C5E760017768C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A42846229C5E760017768C /* UIColor+Extension.swift */; };
 		73A42849229C6D590017768C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A42848229C6D590017768C /* UIView+Extension.swift */; };
+		73F3161922A17DD300C480F4 /* CIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3161822A17DD300C480F4 /* CIServer.swift */; };
+		73F3161B22A17DE100C480F4 /* CIServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3161A22A17DE100C480F4 /* CIServerDelegate.swift */; };
+		73F3162422A1A53400C480F4 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 73F3162322A1A53400C480F4 /* License.txt */; };
 		73FBA787229B25ED00B89B64 /* NewConfession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBA785229B25ED00B89B64 /* NewConfession.swift */; };
 		73FBA78A229B481F00B89B64 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBA789229B481F00B89B64 /* Share.swift */; };
 		73FBA78C229B48B800B89B64 /* Confession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBA78B229B48B800B89B64 /* Confession.swift */; };
@@ -34,9 +37,12 @@
 		7379E772229AF9C700063CBC /* ConfessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfessCell.xib; sourceTree = "<group>"; };
 		7379E774229AFC7A00063CBC /* ConfessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfessCell.swift; sourceTree = "<group>"; };
 		7379E776229AFD2F00063CBC /* ConfessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfessController.swift; sourceTree = "<group>"; };
-		7379E778229AFE8200063CBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		73914846229F0CB80015C545 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		73A42846229C5E760017768C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		73A42848229C6D590017768C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		73F3161822A17DD300C480F4 /* CIServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIServer.swift; sourceTree = "<group>"; };
+		73F3161A22A17DE100C480F4 /* CIServerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIServerDelegate.swift; sourceTree = "<group>"; };
+		73F3162322A1A53400C480F4 /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		73FBA785229B25ED00B89B64 /* NewConfession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConfession.swift; sourceTree = "<group>"; };
 		73FBA789229B481F00B89B64 /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		73FBA78B229B48B800B89B64 /* Confession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confession.swift; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				7379E75F229AF7F600063CBC /* Confess It */,
+				73F3162222A1A51A00C480F4 /* License */,
 				7379E75E229AF7F600063CBC /* Products */,
 				1D8BF9E085700F2912526A28 /* Pods */,
 				F569FE3C29AB90D18403989A /* Frameworks */,
@@ -86,22 +93,80 @@
 		7379E75F229AF7F600063CBC /* Confess It */ = {
 			isa = PBXGroup;
 			children = (
-				7379E760229AF7F600063CBC /* AppDelegate.swift */,
-				73FBA78B229B48B800B89B64 /* Confession.swift */,
-				7379E776229AFD2F00063CBC /* ConfessController.swift */,
-				73FBA785229B25ED00B89B64 /* NewConfession.swift */,
-				73FBA789229B481F00B89B64 /* Share.swift */,
+				73F3161C22A17DE900C480F4 /* CIServer */,
+				73F3162122A1A43600C480F4 /* Models */,
+				73F3161F22A1A3D000C480F4 /* Views */,
+				73F3162022A1A41600C480F4 /* Controllers */,
+				73F3161E22A1A3A300C480F4 /* Required */,
+				73F3161D22A1A39400C480F4 /* Extensions */,
+			);
+			path = "Confess It";
+			sourceTree = "<group>";
+		};
+		73F3161C22A17DE900C480F4 /* CIServer */ = {
+			isa = PBXGroup;
+			children = (
+				73F3161822A17DD300C480F4 /* CIServer.swift */,
+				73F3161A22A17DE100C480F4 /* CIServerDelegate.swift */,
+			);
+			path = CIServer;
+			sourceTree = "<group>";
+		};
+		73F3161D22A1A39400C480F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
 				73A42846229C5E760017768C /* UIColor+Extension.swift */,
 				73A42848229C6D590017768C /* UIView+Extension.swift */,
-				7379E764229AF7F600063CBC /* Main.storyboard */,
-				7379E774229AFC7A00063CBC /* ConfessCell.swift */,
-				7379E772229AF9C700063CBC /* ConfessCell.xib */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		73F3161E22A1A3A300C480F4 /* Required */ = {
+			isa = PBXGroup;
+			children = (
+				7379E760229AF7F600063CBC /* AppDelegate.swift */,
 				7379E767229AF7F800063CBC /* Assets.xcassets */,
 				7379E769229AF7F800063CBC /* LaunchScreen.storyboard */,
 				7379E76C229AF7F800063CBC /* Info.plist */,
-				7379E778229AFE8200063CBC /* GoogleService-Info.plist */,
+				73914846229F0CB80015C545 /* GoogleService-Info.plist */,
 			);
-			path = "Confess It";
+			path = Required;
+			sourceTree = "<group>";
+		};
+		73F3161F22A1A3D000C480F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7379E776229AFD2F00063CBC /* ConfessController.swift */,
+				73FBA785229B25ED00B89B64 /* NewConfession.swift */,
+				7379E774229AFC7A00063CBC /* ConfessCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73F3162022A1A41600C480F4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7379E764229AF7F600063CBC /* Main.storyboard */,
+				7379E772229AF9C700063CBC /* ConfessCell.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		73F3162122A1A43600C480F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73FBA789229B481F00B89B64 /* Share.swift */,
+				73FBA78B229B48B800B89B64 /* Confession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73F3162222A1A51A00C480F4 /* License */ = {
+			isa = PBXGroup;
+			children = (
+				73F3162322A1A53400C480F4 /* License.txt */,
+			);
+			name = License;
 			sourceTree = "<group>";
 		};
 		F569FE3C29AB90D18403989A /* Frameworks */ = {
@@ -173,8 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7379E773229AF9C700063CBC /* ConfessCell.xib in Resources */,
+				73914847229F0CB80015C545 /* GoogleService-Info.plist in Resources */,
+				73F3162422A1A53400C480F4 /* License.txt in Resources */,
 				7379E76B229AF7F800063CBC /* LaunchScreen.storyboard in Resources */,
-				7379E779229AFE8200063CBC /* GoogleService-Info.plist in Resources */,
 				7379E768229AF7F800063CBC /* Assets.xcassets in Resources */,
 				7379E766229AF7F600063CBC /* Main.storyboard in Resources */,
 			);
@@ -249,9 +315,11 @@
 				73FBA78C229B48B800B89B64 /* Confession.swift in Sources */,
 				73FBA78A229B481F00B89B64 /* Share.swift in Sources */,
 				73A42849229C6D590017768C /* UIView+Extension.swift in Sources */,
+				73F3161B22A17DE100C480F4 /* CIServerDelegate.swift in Sources */,
 				73FBA787229B25ED00B89B64 /* NewConfession.swift in Sources */,
 				73A42847229C5E760017768C /* UIColor+Extension.swift in Sources */,
 				7379E761229AF7F600063CBC /* AppDelegate.swift in Sources */,
+				73F3161922A17DD300C480F4 /* CIServer.swift in Sources */,
 				7379E775229AFC7A00063CBC /* ConfessCell.swift in Sources */,
 				7379E777229AFD2F00063CBC /* ConfessController.swift in Sources */,
 			);
@@ -402,7 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LBL5W959W4;
-				INFOPLIST_FILE = "Confess It/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Confess It/Required/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,7 +489,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LBL5W959W4;
-				INFOPLIST_FILE = "Confess It/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Confess It/Required/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

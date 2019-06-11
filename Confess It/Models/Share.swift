@@ -1,24 +1,24 @@
-//
-//  Share.swift
-//  Confess It
-//
-//  Created by Erik Bean on 5/26/19.
-//  Copyright © 2019 Brick Water Studios. All rights reserved.
-//
+/*
+ * Confess It
+ *
+ * This app is provided as-is with no warranty or guarantee
+ * See the license file under "Confess It" -> "License" ->
+ * "License.txt"
+ *
+ * Copyright © 2019 Brick Water Studios
+ *
+ */
 
 import UIKit
 import Firebase
 
-/// Generate an error code
-///
-/// CODES: 1-- Share
-///        2-- Firebase
-///        3-- Recoverable Unknown
+/// Relocated
 private func error(code: Int, desciption: String) -> Error {
     return NSError(domain: "bws.confess.app", code: code, userInfo: [NSLocalizedDescriptionKey: desciption]) as Error
 }
 
-/// Share a confession
+// Deprecatd
+@available(*, deprecated, message: "Use CIServer().share(_:)")
 public func share(confession: Confession) throws {
     let shareSheet = UIActivityViewController(activityItems: [confession.shareString], applicationActivities: nil)
     if let root = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
@@ -28,6 +28,8 @@ public func share(confession: Confession) throws {
     } else { throw error(code: 100, desciption: "Could not find navigation controller") }
 }
 
+// Deprecated
+@available(*, deprecated, message: "Reloacated to CIServer().share(_:)")
 public func share(items: [UIImage]) throws {
     let shareSheet = UIActivityViewController(activityItems: items, applicationActivities: nil)
     if let root = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
@@ -37,9 +39,11 @@ public func share(items: [UIImage]) throws {
     } else { throw error(code: 100, desciption: "Could not find navigation controller") }
 }
 
-private let db = Firestore.firestore()
+private let db = Firestore.firestore() // Relocated
 public var confessions = [Confession]()
 
+// Deprecated
+@available(*, deprecated, message: "Reloacated to CIServer().subscribe()")
 public func subscribe(pulse: @escaping () -> Void) {
     db.collection("confessions").addSnapshotListener { docSnap, error in
         guard let doc = docSnap else {
@@ -64,6 +68,12 @@ public func subscribe(pulse: @escaping () -> Void) {
                     color = UIColor(red: 33/255, green: 33/255, blue: 33/255, alpha: 1)
                 }
                 let conf = Confession(referance: d.document.reference, author: author, story: story, pubished: time, background: color)
+                if let r = dat["reports"] as? Int {
+                    if r >= 5 {
+                        moveAndRemove(confession: conf)
+                        continue
+                    }
+                }
                 confessions.append(conf)
             } else { continue }
             confessions.sort(by: { $0.published > $1.published })
@@ -72,7 +82,26 @@ public func subscribe(pulse: @escaping () -> Void) {
     }
 }
 
+// Deprecated
+@available(*, deprecated)
+private func moveAndRemove(confession: Confession) {
+    
+}
 
+// Deprecated
+@available(*, deprecated)
+private func remove(document: DocumentReference, completion: @escaping (Bool) -> Void) {
+    document.delete { error in
+        if let error = error {
+            print(error.localizedDescription)
+            completion(false)
+        } else {
+            completion(true)
+        }
+    }
+}
+
+@available(*, deprecated, message: "Relocated to CIServer().post(_:, _:, _:)")
 public func post(author: String, story: String, color: UIColor, completion: @escaping (Error?) -> Void) {
     db.collection("confessions").document().setData([
         "author": author,
@@ -84,6 +113,8 @@ public func post(author: String, story: String, color: UIColor, completion: @esc
     }
 }
 
-//public func report(confession: Confession) {
-//    
-//}
+// Deprecated
+@available(*, deprecated, message: "Relocated to CIServer().report(_:)")
+public func report(confession: Confession, completion: (Bool) -> Void) {
+    
+}

@@ -1,10 +1,13 @@
-//
-//  Confession.swift
-//  Confess It
-//
-//  Created by Erik Bean on 5/26/19.
-//  Copyright © 2019 Brick Water Studios. All rights reserved.
-//
+/*
+ * Confess It
+ *
+ * This app is provided as-is with no warranty or guarantee
+ * See the license file under "Confess It" -> "License" ->
+ * "License.txt"
+ *
+ * Copyright © 2019 Brick Water Studios
+ *
+ */
 
 import UIKit
 import Firebase
@@ -17,13 +20,15 @@ public struct Confession {
     let story: String!
     let published: Date!
     let background: UIColor!
+    var reports = 0
     
-    init(referance: DocumentReference? = nil, author: String, story: String, pubished: Date?, background: UIColor?) {
+    init(referance: DocumentReference? = nil, author: String, story: String, pubished: Date?, background: UIColor?, reports: Int = 0) {
         self.referance = referance
         self.author = author
         self.story = story
         self.published = pubished ?? Date()
         self.background = background ?? .black
+        self.reports = reports
     }
     
     init(story: String) {
@@ -40,5 +45,15 @@ public struct Confession {
         } else {
             return story + "\n- Anonymous\n" + kBetaNotice
         }
+    }
+    
+    var diagString: String {
+        return """
+        -- Confession Diagnostic
+        - ID: \(referance?.documentID ?? "")
+        - Author: \(author ?? "unknown")
+        - Published On: \(published.description(with: NSLocale.current))
+        - Reported: \(reports)
+        """
     }
 }
