@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733A247822EF701600266AB1 /* profile_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 733A247722EF701500266AB1 /* profile_background.jpg */; };
+		733A247A22EF705C00266AB1 /* signup_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 733A247922EF705C00266AB1 /* signup_background.jpg */; };
 		7379E761229AF7F600063CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379E760229AF7F600063CBC /* AppDelegate.swift */; };
 		7379E766229AF7F600063CBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7379E764229AF7F600063CBC /* Main.storyboard */; };
 		7379E768229AF7F800063CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7379E767229AF7F800063CBC /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		599F9A8A69D520459C8C5440 /* Pods-Confess It.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confess It.debug.xcconfig"; path = "Target Support Files/Pods-Confess It/Pods-Confess It.debug.xcconfig"; sourceTree = "<group>"; };
+		733A247722EF701500266AB1 /* profile_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile_background.jpg; sourceTree = "<group>"; };
+		733A247922EF705C00266AB1 /* signup_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = signup_background.jpg; sourceTree = "<group>"; };
 		7379E75D229AF7F600063CBC /* Confess It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Confess It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7379E760229AF7F600063CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7379E765229AF7F600063CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		733A247422EF6FE600266AB1 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				733A247722EF701500266AB1 /* profile_background.jpg */,
+				733A247922EF705C00266AB1 /* signup_background.jpg */,
+			);
+			path = Temp;
+			sourceTree = "<group>";
+		};
 		7379E754229AF7F600063CBC = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +106,7 @@
 		7379E75F229AF7F600063CBC /* Confess It */ = {
 			isa = PBXGroup;
 			children = (
+				733A247422EF6FE600266AB1 /* Temp */,
 				73F3161C22A17DE900C480F4 /* CIServer */,
 				73F3162122A1A43600C480F4 /* Models */,
 				73F3161F22A1A3D000C480F4 /* Views */,
@@ -241,7 +255,9 @@
 				73914847229F0CB80015C545 /* GoogleService-Info.plist in Resources */,
 				73F3162422A1A53400C480F4 /* License.txt in Resources */,
 				7379E76B229AF7F800063CBC /* LaunchScreen.storyboard in Resources */,
+				733A247822EF701600266AB1 /* profile_background.jpg in Resources */,
 				7379E768229AF7F800063CBC /* Assets.xcassets in Resources */,
+				733A247A22EF705C00266AB1 /* signup_background.jpg in Resources */,
 				7379E766229AF7F600063CBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,28 +293,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Confess It/Pods-Confess It-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Confess It/Pods-Confess It-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Confess It/Pods-Confess It-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
